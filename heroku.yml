@@ -1,0 +1,5 @@
+build:
+  docker:
+    worker: Dockerfile
+run:
+  worker: java -jar /buildfarm-worker_deploy.jar /config/worker.config
