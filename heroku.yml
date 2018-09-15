@@ -2,4 +2,4 @@ build:
   docker:
     worker: worker/Dockerfile
 run:
-  worker: java -jar /buildfarm-worker_deploy.jar /config/worker.config
+  worker: java -Djava.util.logging.config.file=/config/logging.properties -jar /buildfarm-worker_deploy.jar /config/worker.config

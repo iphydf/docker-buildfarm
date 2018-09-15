@@ -39,4 +39,4 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 COPY --from=0 /buildfarm-server_deploy.jar /buildfarm-worker_deploy.jar /
-COPY server/server.config worker/worker.config /config/
+COPY logging.properties server/server.config worker/worker.config /config/
